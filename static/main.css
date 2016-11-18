@@ -1,0 +1,92 @@
+html, body {
+  background: #333;
+  color: white;
+  font-family: Helvetica;
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #666;
+  padding: 20px
+}
+
+.avatar {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  float: right;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px
+}
+
+.playlist {
+  padding: 20px
+}
+.playlist ul {
+  list-style: none;
+  padding: 0
+}
+
+.playlist ul li {
+  margin-bottom: 8px;
+  padding: 10px;
+  background-color: #333;
+  height: 50px;
+  position: relative;
+}
+
+.playlist ul li:hover {
+  background-color: #444;
+}
+
+.playlist ul li .playbutton {
+  border: 0;
+  background-color: #555;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+.playlist ul li .playbutton:hover {
+  background-color: #333;
+}
+.playlist .track-image {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+.playlist .track-info {
+  font-size: 16px;
+  font-weight: 100;
+  float: right;
+}
+.playlist .track-note {
+  width: 40%;
+  margin-bottom: 4px;
+  border: 0;
+  padding: 4px 0px 4px 8px;
+  background-color: #ccc;
+  font-size: 24px;
+}
+.playlist .track-pos {
+  width: 30%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.playlist .track-title {
+  font-size: 12px;
+  font-style: italic;
+}
