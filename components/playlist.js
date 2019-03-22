@@ -45,7 +45,7 @@ export default class Playlist extends React.Component {
     var trackData = this.getTrackData(track.id);
     return <li key={track.id}>
       <input className="track-note" value={trackData.note} onChange={e => this.updateTrackData(track.id, e.target.value, trackData.startPosition)}/>
-      <input className="track-pos" type="range" min="0" value={trackData.startPosition} max={track.duration/1000} step="1" onChange={e => this.updateTrackData(track.id, trackData.note, e.target.value)}/>
+      <input className="track-pos" type="range" min="0" value={trackData.startPosition} max={track.duration_ms/1000} step="1" onChange={e => this.updateTrackData(track.id, trackData.note, e.target.value)}/>
       <label>{juration.stringify(trackData.startPosition) || '0 secs'}</label>
       <div className="track-title">{track.name} - {track.artists[0].name}</div>
       <button className="playbutton" onClick={() => this.playTrack(track, trackData.startPosition)}>Play</button>
